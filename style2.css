@@ -1,0 +1,73 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+}
+#cyberpunk {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 40px;
+  filter: drop-shadow(0 0 20px hsla(320, 40%, 60%, 0.8));
+  font-size: 64px;
+  position: relative;
+  z-index: 1;
+  font-family: 'Passion One', cursive;
+  font-style: italic;
+}
+.text:nth-child(1) {
+  color: hsl(320, 90%, 90%);
+  -webkit-clip-path: inset(40% 0% 40% 0%);
+          clip-path: inset(40% 0% 40% 0%);
+  z-index: 5;
+}
+.text:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  color: hsl(260, 90%, 80%);
+  -webkit-clip-path: inset(0% 0% 60% 0%);
+          clip-path: inset(0% 0% 60% 0%);
+  -webkit-animation: random1 1000ms steps(1) alternate infinite;
+          animation: random1 1000ms steps(1) alternate infinite;
+}
+.text:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  color: hsl(260, 90%, 50%);
+  -webkit-clip-path: inset(60% 0% 0% 0%);
+          clip-path: inset(60% 0% 0% 0%);
+  -webkit-animation: random2 1000ms steps(1) alternate infinite;
+          animation: random2 1000ms steps(1) alternate infinite;
+}
+.thing-1 {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  height: 50%;
+  width: 100%;
+  background-color: hsl(225, 100%, 40%);
+  z-index: -1;
+  -webkit-animation: random-clip-1 20s steps(1) infinite;
+          animation: random-clip-1 20s steps(1) infinite;
+}
+#scanline {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+  background-size: 100% 2px;
+}

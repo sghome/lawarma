@@ -1,0 +1,144 @@
+.fixed-scroll {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  font: 700 16px "Open Sans";
+  color: #202020;
+  -webkit-animation: 3s shape1 linear infinite;
+          animation: 3s shape1 linear infinite;
+}
+
+@-webkit-keyframes shape1 {
+  0% {
+    bottom: 15px;
+  }
+  35% {
+    bottom: 15px;
+  }
+  40% {
+    bottom: 18px;
+  }
+  43% {
+    bottom: 10px;
+  }
+  47% {
+    bottom: 15px;
+  }
+  100% {
+    bottom: 15px;
+  }
+}
+
+@keyframes shape1 {
+  0% {
+    bottom: 15px;
+  }
+  35% {
+    bottom: 15px;
+  }
+  40% {
+    bottom: 18px;
+  }
+  43% {
+    bottom: 10px;
+  }
+  47% {
+    bottom: 15px;
+  }
+  100% {
+    bottom: 15px;
+  }
+}
+.header {
+  text-transform: uppercase;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(150px, auto);
+}
+.main .left {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  background: #202020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .left .top {
+  display: block;
+  margin-bottom: 5px;
+}
+.main .left .left-header {
+  font: 400 5rem "Libre Barcode 128 Text", sans-serif;
+  color: #fff;
+  max-width: 390px;
+  margin: 0 auto;
+  border-radius: 5px;
+  text-align: center;
+}
+.main .right {
+  grid-column: 2/3;
+  grid-row: 1/-1;
+  height: 100%;
+  width: 50vw;
+  background: #e8e0e0;
+  overflow: scroll;
+}
+.main .right-header {
+  color: tomato;
+  font-size: 18px;
+  text-align: left;
+  font-family: "Open Sans";
+}
+.main .text-section {
+  padding: 30px 50px;
+  text-align: left;
+  max-width: 350px;
+  margin: 0 auto;
+}
+.main .text-section p {
+  font: 300 14px "Open Sans", sans-serif;
+  line-height: 18px;
+}
+.main .text-section .bkg-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 3px;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.main .text-section .bkg-one {
+  background: url("https://media.giphy.com/media/l41lVsYDBC0UVQJCE/giphy.gif");
+}
+.main .text-section .bkg-two {
+  background: url("https://media1.tenor.com/images/e1260ed836dd5f6512f192213f1229bd/tenor.gif?itemid=4657340");
+}
+.main .text-section .bkg-three {
+  background: url("https://thumbs.gfycat.com/BleakHarmfulCopperbutterfly-size_restricted.gif");
+}
+.main .text-section .bkg-four {
+  background: url("https://thumbs.gfycat.com/BlandWastefulFruitfly-small.gif");
+  background-position: 50% 100%;
+}
+.main .text-section .bkg-five {
+  background: url("https://i.pinimg.com/originals/7a/26/24/7a2624c6762fa4775852ef6f1d5af1fb.gif");
+}
+.main .text-section .bkg-six {
+  background: url("https://media1.tenor.com/images/3cd40b8b76565287d7a1a6c606772b5d/tenor.gif?itemid=4657343");
+}
+.main .text-section .bkg-seven {
+  background: url("https://i.chzbgr.com/full/8558561792/h6D779C5A/");
+}
+.main .text-section .bkg-eight {
+  background: url("https://media.giphy.com/media/3oEduPlMkw4LZE7624/giphy.gif");
+}
+.main .text-section .bkg-nine {
+  background: url("https://media1.tenor.com/images/e2a92f024fefc046b1a4623ab64eb8f4/tenor.gif?itemid=8262581");
+}
+.main .text-section .bkg-ten {
+  background: url("https://media.giphy.com/media/xTiTnJ3BooiDs8dL7W/giphy.gif");
+}
